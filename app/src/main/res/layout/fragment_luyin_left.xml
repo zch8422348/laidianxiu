@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+         <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+       
+             <com.yuncai.call.tdvrcall.view.RecordButton
+                 android:layout_marginTop="170dp"
+             android:shadowColor="#DCD8E8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textSize="30sp"
+            android:shadowRadius="5"
+            android:gravity="center"
+             android:textColor="#FFFFFF"
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_normal_button_luyin_selector"
+            android:text="按住录音\n留言" />
+
+        <Button
+            android:visibility="gone"
+            android:layout_margin="15dp"
+            android:id="@+id/angry_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_normal_button_luyin_default"
+            android:shadowColor="#DCD8E8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="预览"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+       
+     
+        <Button
+            android:visibility="gone"
+            android:layout_margin="15dp"
+            android:id="@+id/angry_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_normal_button_luyin_default"
+            android:shadowColor="#DCD8E8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/angry_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_normal_button_luyin_default"
+            android:shadowColor="#DCD8E8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="删除"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+       
+    </LinearLayout>
+
+       
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.yuncai.call.tdvrcall.view.CommomTitleBar
+        app:title_text="交接班留言"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/gray"
+        >
+   <fragment 
+       android:background="@color/white"
+       android:id="@+id/luyin_left"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:name="com.yuncai.call.tdvrcall.leavingmsg.LuYinFragment"
+       android:layout_weight="1"
+       />
+    <View android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
+    <fragment
+        android:background="@color/white" 
+        android:id="@+id/luyin_right"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:name="com.yuncai.call.tdvrcall.leavingmsg.YinListFragment"
+       android:layout_weight="1"
+       />
+    </LinearLayout>
+</LinearLayout>

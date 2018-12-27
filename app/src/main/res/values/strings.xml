@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TdvrCall</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="group_null_name">组 名</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/title_bar_bg_color"
+    android:gravity="center_vertical">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/rg_quick_dial_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/rb_group1"
+            android:text="组 N"
+            android:button="@null"
+           style="@style/group_btn_style" />
+        <RadioButton
+            android:id="@+id/rb_group2"
+            android:text="组 N"
+            android:button="@null"
+            style="@style/group_btn_style" />
+        <RadioButton
+            android:id="@+id/rb_group3"
+            android:text="组 N"
+            android:button="@null"
+            style="@style/group_btn_style" />
+        <RadioButton
+            android:id="@+id/rb_group4"
+            android:text="组 N"
+            android:button="@null"
+            style="@style/group_btn_style" />
+        <RadioButton
+            android:id="@+id/rb_group5"
+            android:text="组 N"
+            android:button="@null"
+            style="@style/group_btn_style" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/btn_group_edit"
+        android:text="编辑"
+        android:button="@null"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="10sp"
+       android:background="@drawable/group_btn_bg_select"
+        />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/title_text_size"
+            android:text="全融合通信终端机"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/title_text_size"
+            android:text="TD801GX-DF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_setting"
+            style="@style/setting_btn_text_style"
+            android:text="设置"
+      />
+        <TextView
+            android:id="@+id/tv_voice_record"
+            style="@style/setting_btn_text_style"
+            android:text="录音\n记录"
+          />
+        <TextView
+            android:id="@+id/tv_duty_statistics"
+            android:text="值班\n统计"
+            style="@style/setting_btn_text_style"/>
+        <TextView
+            android:id="@+id/tv_leaving_msg"
+            android:text="交接班\n留言"
+            style="@style/setting_btn_text_style"/>
+        <TextView
+            android:id="@+id/tv_address_book"
+            android:text="联系人"
+            style="@style/setting_btn_text_style" />
+        <TextView
+            android:id="@+id/tv_call_info"
+            android:text="通话\n记录"
+            style="@style/setting_btn_text_style" />
+        <TextView
+            android:id="@+id/tv_dial"
+            android:text="拨号"
+            style="@style/setting_btn_text_style" />
+    </LinearLayout>
+</LinearLayout>
